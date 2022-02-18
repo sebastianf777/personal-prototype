@@ -18,7 +18,7 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #040404 url("../img/bg.jpg") top right no-repeat;
+  background: #040404 url("../img/bg.png") top right no-repeat;
   background-size: cover;
   left: 0;
   right: 0;
@@ -59,7 +59,7 @@ h1, h2, h3, h4, h5, h6 {
   overflow-y: auto;
 }
 #header * {
-  transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.1s;
 }
 #header h1 {
   font-size: 48px;
@@ -70,18 +70,18 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Verana", sans-serif;
 }
 #header h1 a, #header h1 a:hover {
-  color: #fff;
+  color: #f5e080;
   line-height: 1;
   display: inline-block;
 }
 #header h2 {
   font-size: 24px;
   margin-top: 20px;
-  color: rgba(255, 255, 255, 0.8);
+  color:#a56f25 ;
 }
 #header h2 span {
-  color: #fff;
-  border-bottom: 2px solid #18d26e;
+  color: #f5e080;
+  border-bottom: 2px solid #f5e080;
   padding-bottom: 6px;
 }
 #header img {
@@ -97,8 +97,8 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(255, 255, 255, 0.1);
-  color: #fff;
+  background: black;
+  color: #a56f25;
   line-height: 1;
   margin-right: 8px;
   border-radius: 50%;
@@ -106,7 +106,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 40px;
 }
 #header .social-links a:hover {
-  background: #18d26e;
+  color: #f5e080;
 }
 @media (max-width: 992px) {
   #header h1 {
@@ -189,7 +189,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Verana", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  color: rgba(255, 255, 255, 0.7);
+  color: #a56f25;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -205,17 +205,24 @@ h1, h2, h3, h4, h5, h6 {
   height: 2px;
   bottom: -4px;
   left: 0;
-  background-color: #18d26e;
+  right: 0;
+  background-color: #f5e080;
   visibility: hidden;
-  width: 0px;
+  margin: 0 auto;
   transition: all 0.3s ease-in-out 0s;
 }
 .navbar a:hover:before, .navbar li:hover > a:before, .navbar .active:before {
   visibility: visible;
-  width: 25px;
+  width: calc(100% - 0.5em);
+}
+@media (max-width: 992px) {
+  .navbar a:hover:before, .navbar li:hover > a:before, .navbar .active:before {
+    
+    width: 0;
+  }
 }
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  color: #fff;
+  color: #f5e080;
 }
 
 /**
@@ -330,7 +337,7 @@ section .container {
   width: 120px;
   height: 1px;
   display: inline-block;
-  background: #4ceb95;
+  background: #a56f25;
   margin: 4px 10px;
 }
 .section-title p {
@@ -348,8 +355,8 @@ section .container {
 --------------------------------------------------------------*/
 .about-me .content h3 {
   font-weight: 700;
-  font-size: 26px;
-  color: #18d26e;
+  font-size: 32px;
+  color: #f5e080;
 }
 .about-me .content ul {
   list-style: none;
@@ -371,6 +378,11 @@ section .container {
 }
 .about-me .content p:last-child {
   margin-bottom: 0;
+}
+
+.about_sub{
+  font-size: 24px;
+  color: #a56f25;
 }
 
 /*--------------------------------------------------------------
@@ -535,7 +547,7 @@ section .container {
   background-color: rgba(255, 255, 255, 0.3);
 }
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #18d26e;
+  background-color: #f5e080;
 }
 
 /*--------------------------------------------------------------
@@ -689,7 +701,7 @@ section .container {
   border-radius: 4px;
 }
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  background: #18d26e;
+  background: #a56f25;
 }
 .portfolio #portfolio-flters li:last-child {
   margin-right: 0;
@@ -871,7 +883,7 @@ section .container {
 }
 .contact .info-box i.bx {
   font-size: 24px;
-  color: #18d26e;
+  color: #f5e080;
   border-radius: 50%;
   padding: 14px;
   float: left;
