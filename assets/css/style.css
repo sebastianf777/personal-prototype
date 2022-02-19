@@ -715,7 +715,7 @@ section .container {
 }
 .portfolio .portfolio-wrap::before {
   content: "";
-  background: rgba(0, 0, 0, 0.6);
+
   position: absolute;
   left: 30px;
   right: 30px;
@@ -915,7 +915,7 @@ section .container {
   transition: 0.3s;
 }
 .contact .info-box .social-links a:hover {
-  color: #18d26e;
+  color: #f5e080;
 }
 .contact .php-email-form {
   padding: 30px;
