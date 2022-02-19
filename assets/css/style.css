@@ -4,9 +4,7 @@
 @font-face {
   font-family: "Verana";
 
-  src: local("Verana"),
-      url("fonts/Verana-Regular.otf") format("opentype");
-
+  src: local("Verana"), url("../../fonts/Verana-Regular.otf") format("opentype");
 }
 body {
   font-family: "Verana", sans-serif;
@@ -42,7 +40,12 @@ a:hover {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Verana", sans-serif;
 }
 
@@ -62,22 +65,24 @@ h1, h2, h3, h4, h5, h6 {
   transition: ease-in-out 0.1s;
 }
 #header h1 {
-  font-size: 48px;
+  font-size: 64px;
   margin: 0;
   padding: 0;
   line-height: 1;
   font-weight: 700;
   font-family: "Verana", sans-serif;
 }
-#header h1 a, #header h1 a:hover {
+
+#header h1 a,
+#header h1 a:hover {
   color: #f5e080;
   line-height: 1;
   display: inline-block;
 }
 #header h2 {
-  font-size: 24px;
+  font-size: 36px;
   margin-top: 20px;
-  color:#a56f25 ;
+  color: #a56f25;
 }
 #header h2 span {
   color: #f5e080;
@@ -93,7 +98,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
 }
 #header .social-links a {
-  font-size: 16px;
+  font-size: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -110,7 +115,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 992px) {
   #header h1 {
-    font-size: 36px;
+    font-size: 48px;
   }
   #header h2 {
     font-size: 20px;
@@ -135,7 +140,8 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   background: rgba(0, 0, 0, 0.9);
 }
-#header.header-top .social-links, #header.header-top h2 {
+#header.header-top .social-links,
+#header.header-top h2 {
   display: none;
 }
 #header.header-top h1 {
@@ -181,19 +187,22 @@ h1, h2, h3, h4, h5, h6 {
 .navbar li + li {
   margin-left: 30px;
 }
-.navbar a, .navbar a:focus {
+.navbar a,
+.navbar a:focus {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0;
   font-family: "Verana", sans-serif;
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 400;
   color: #a56f25;
   white-space: nowrap;
   transition: 0.3s;
 }
-.navbar a i, .navbar a:focus i {
+
+.navbar a i,
+.navbar a:focus i {
   font-size: 12px;
   line-height: 0;
   margin-left: 5px;
@@ -211,17 +220,27 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
   transition: all 0.3s ease-in-out 0s;
 }
-.navbar a:hover:before, .navbar li:hover > a:before, .navbar .active:before {
+.navbar a:hover:before,
+.navbar li:hover > a:before,
+.navbar .active:before {
   visibility: visible;
   width: calc(100% - 0.5em);
 }
 @media (max-width: 992px) {
-  .navbar a:hover:before, .navbar li:hover > a:before, .navbar .active:before {
-    
+  .navbar a:hover:before,
+  .navbar li:hover > a:before,
+  .navbar .active:before {
     width: 0;
   }
+  .navbar a,
+  .navbar a:focus {
+    font-size: 18px;
+  }
 }
-.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover > a {
   color: #f5e080;
 }
 
@@ -284,7 +303,8 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-mobile li + li {
   margin: 0;
 }
-.navbar-mobile a, .navbar-mobile a:focus {
+.navbar-mobile a,
+.navbar-mobile a:focus {
   font-size: 16px;
   position: relative;
 }
@@ -355,8 +375,13 @@ section .container {
 --------------------------------------------------------------*/
 .about-me .content h3 {
   font-weight: 700;
-  font-size: 32px;
+  font-size: 64px;
   color: #f5e080;
+}
+@media (max-width: 992px) {
+  .about-me .content h3 {
+    font-size: 32px;
+  }
 }
 .about-me .content ul {
   list-style: none;
@@ -379,12 +404,23 @@ section .container {
 .about-me .content p:last-child {
   margin-bottom: 0;
 }
-
-.about_sub{
-  font-size: 24px;
-  color: #a56f25;
+.about_p {
+  font-size: 20px;
 }
-
+.about_sub {
+  font-size: 36px;
+  color: #a56f25;
+  margin-bottom: 8px;
+}
+@media (max-width: 992px) {
+  .about_sub {
+    font-size: 24px;
+    color: #a56f25;
+  }
+  .about_p {
+    font-size: 18px;
+  }
+}
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
@@ -485,7 +521,8 @@ section .container {
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
-.testimonials .testimonials-carousel, .testimonials .testimonials-slider {
+.testimonials .testimonials-carousel,
+.testimonials .testimonials-slider {
   overflow: hidden;
 }
 .testimonials .testimonial-item {
@@ -511,7 +548,8 @@ section .container {
   color: #999;
   margin: 0 0 0 45px;
 }
-.testimonials .testimonial-item .quote-icon-left, .testimonials .testimonial-item .quote-icon-right {
+.testimonials .testimonial-item .quote-icon-left,
+.testimonials .testimonial-item .quote-icon-right {
   color: rgba(255, 255, 255, 0.25);
   font-size: 26px;
 }
@@ -668,8 +706,12 @@ section .container {
 .services .icon-box:hover .icon::before {
   background: #35e888;
 }
-.services .icon-box:hover h4 a, .services .icon-box:hover p {
+.services .icon-box:hover h4 a,
+.services .icon-box:hover p {
   color: #fff;
+}
+.ofertas img {
+  width: 100%;
 }
 
 /*--------------------------------------------------------------
@@ -700,7 +742,8 @@ section .container {
   transition: all 0.3s ease-in-out;
   border-radius: 4px;
 }
-.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
+.portfolio #portfolio-flters li:hover,
+.portfolio #portfolio-flters li.filter-active {
   background: #a56f25;
 }
 .portfolio #portfolio-flters li:last-child {
@@ -958,7 +1001,8 @@ section .container {
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
 }
-.contact .php-email-form input, .contact .php-email-form textarea {
+.contact .php-email-form input,
+.contact .php-email-form textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
@@ -967,14 +1011,17 @@ section .container {
   transition: 0.3s;
   color: #fff;
 }
-.contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
+.contact .php-email-form input:focus,
+.contact .php-email-form textarea:focus {
   background-color: rgba(255, 255, 255, 0.11);
 }
-.contact .php-email-form input::-moz-placeholder, .contact .php-email-form textarea::-moz-placeholder {
+.contact .php-email-form input::-moz-placeholder,
+.contact .php-email-form textarea::-moz-placeholder {
   color: rgba(255, 255, 255, 0.3);
   opacity: 1;
 }
-.contact .php-email-form input::placeholder, .contact .php-email-form textarea::placeholder {
+.contact .php-email-form input::placeholder,
+.contact .php-email-form textarea::placeholder {
   color: rgba(255, 255, 255, 0.3);
   opacity: 1;
 }
@@ -984,7 +1031,7 @@ section .container {
 .contact .php-email-form textarea {
   padding: 12px 15px;
 }
-.contact .php-email-form button[type=submit] {
+.contact .php-email-form button[type="submit"] {
   background: #18d26e;
   border: 0;
   padding: 10px 30px;
@@ -992,7 +1039,7 @@ section .container {
   transition: 0.4s;
   border-radius: 4px;
 }
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-form button[type="submit"]:hover {
   background: #15bb62;
 }
 @-webkit-keyframes animate-loading {
